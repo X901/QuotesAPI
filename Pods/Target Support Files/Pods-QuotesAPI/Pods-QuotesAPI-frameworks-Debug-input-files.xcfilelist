@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-QuotesAPI/Pods-QuotesAPI-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/RuntimeNew/RuntimeNew.framework
+${BUILT_PRODUCTS_DIR}/Unrealm/Unrealm.framework

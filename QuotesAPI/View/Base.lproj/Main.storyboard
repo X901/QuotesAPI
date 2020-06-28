@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oe0-so-0bT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quotes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuotesViewController" customModule="QuotesAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GB9-sc-SoZ">
+                                <rect key="frame" x="20" y="103" width="374" height="327.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAE-eE-JTX" customClass="UIViewX" customModule="QuotesAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="272.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gvW-wx-lP3">
+                                                <rect key="frame" x="8" y="8" width="358" height="233"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ae6-Ph-Mc6"/>
+                                                </connections>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-OA-Q8X">
+                                                <rect key="frame" x="334" y="232.5" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="QNY-UF-57B"/>
+                                                    <constraint firstAttribute="height" constant="32" id="jFv-dy-M3c"/>
+                                                </constraints>
+                                                <state key="normal" image="starOff"/>
+                                                <connections>
+                                                    <action selector="favoriteQuoteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19g-RZ-GLl"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmA-XS-x7M">
+                                                <rect key="frame" x="12" y="249" width="305" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="EmA-XS-x7M" firstAttribute="top" secondItem="gvW-wx-lP3" secondAttribute="bottom" constant="8" id="03b-tf-659"/>
+                                            <constraint firstAttribute="bottom" secondItem="EmA-XS-x7M" secondAttribute="bottom" constant="3" id="8hA-7B-pgd"/>
+                                            <constraint firstAttribute="bottom" secondItem="g3y-OA-Q8X" secondAttribute="bottom" constant="8" id="9hU-f8-FJ9"/>
+                                            <constraint firstItem="gvW-wx-lP3" firstAttribute="top" secondItem="oAE-eE-JTX" secondAttribute="top" constant="8" id="Gqc-s1-W9g"/>
+                                            <constraint firstItem="g3y-OA-Q8X" firstAttribute="leading" secondItem="EmA-XS-x7M" secondAttribute="trailing" constant="17" id="Hdo-gf-c5D"/>
+                                            <constraint firstAttribute="trailing" secondItem="g3y-OA-Q8X" secondAttribute="trailing" constant="8" id="b39-Bq-wPh"/>
+                                            <constraint firstItem="gvW-wx-lP3" firstAttribute="leading" secondItem="oAE-eE-JTX" secondAttribute="leading" constant="8" id="ijs-Cz-0iA"/>
+                                            <constraint firstItem="EmA-XS-x7M" firstAttribute="leading" secondItem="oAE-eE-JTX" secondAttribute="leading" constant="12" id="sKY-Wf-huk"/>
+                                            <constraint firstAttribute="trailing" secondItem="gvW-wx-lP3" secondAttribute="trailing" constant="8" id="wgk-BP-6En"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="3.2999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEt-s9-kCd">
+                                        <rect key="frame" x="0.0" y="287.5" width="374" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vji-wk-nL1"/>
+                                        </constraints>
+                                        <state key="normal" title="Random Quote">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="randomQuoteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lpn-Ak-bnc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GB9-sc-SoZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="33p-4C-kzE"/>
+                            <constraint firstAttribute="trailing" secondItem="GB9-sc-SoZ" secondAttribute="trailing" constant="20" id="XUF-NQ-T9x"/>
+                            <constraint firstItem="GB9-sc-SoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kRR-n4-erZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quotes" id="9AL-r8-Rqk">
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="4zP-bj-96j">
+                            <connections>
+                                <segue destination="1ua-UZ-i0d" kind="show" id="W8O-iE-OwI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="authorLabel" destination="EmA-XS-x7M" id="lIH-QZ-Ij6"/>
+                        <outlet property="favoriteButton" destination="g3y-OA-Q8X" id="39v-Md-4Kq"/>
+                        <outlet property="quoteTextView" destination="gvW-wx-lP3" id="0VO-wr-aKB"/>
+                        <outlet property="quoteView" destination="oAE-eE-JTX" id="x0o-6O-LG1"/>
+                        <outlet property="randomQuoteButton" destination="kEt-s9-kCd" id="HVe-ui-qDl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="cf9-8H-Tza">
+            <objects>
+                <viewController id="1ua-UZ-i0d" customClass="FavoritesQuotesViewController" customModule="QuotesAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v0g-vs-yhR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PtA-Fb-qq5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favoritesQuotesCell" rowHeight="154" id="hwg-t5-Z13" customClass="FavoritesQuotesTableViewCell" customModule="QuotesAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hwg-t5-Z13" id="0dU-06-gYB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-eR-0Og">
+                                                    <rect key="frame" x="8" y="8" width="398" height="94"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXF-v1-rWE">
+                                                    <rect key="frame" x="28" y="110" width="326" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="326" id="25Z-Ng-9OV"/>
+                                                        <constraint firstAttribute="height" constant="25" id="OkF-8U-4m7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aoR-eR-0Og" secondAttribute="trailing" constant="8" id="5m5-5N-ONi"/>
+                                                <constraint firstItem="xXF-v1-rWE" firstAttribute="leading" secondItem="0dU-06-gYB" secondAttribute="leadingMargin" constant="8" id="CHj-ub-AuY"/>
+                                                <constraint firstItem="xXF-v1-rWE" firstAttribute="top" secondItem="aoR-eR-0Og" secondAttribute="bottom" constant="8" id="Oh1-98-4vy"/>
+                                                <constraint firstItem="aoR-eR-0Og" firstAttribute="leading" secondItem="0dU-06-gYB" secondAttribute="leading" constant="8" id="cGZ-ke-7FM"/>
+                                                <constraint firstItem="aoR-eR-0Og" firstAttribute="top" secondItem="0dU-06-gYB" secondAttribute="top" constant="8" id="qjr-Mv-sPe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xXF-v1-rWE" secondAttribute="bottom" constant="8" id="yOO-YU-Gb0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="xXF-v1-rWE" id="EOB-6T-O3Y"/>
+                                            <outlet property="quoteTextView" destination="aoR-eR-0Og" id="icd-Bw-7qb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1ua-UZ-i0d" id="81g-ih-RmQ"/>
+                                    <outlet property="delegate" destination="1ua-UZ-i0d" id="pV4-EG-9YU"/>
+                                    <outlet property="emptyDataSetDelegate" destination="1ua-UZ-i0d" id="0Fh-PA-5uB"/>
+                                    <outlet property="emptyDataSetSource" destination="1ua-UZ-i0d" id="jVv-VX-rgy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N83-sq-Fw5" firstAttribute="trailing" secondItem="PtA-Fb-qq5" secondAttribute="trailing" id="4mV-pV-skI"/>
+                            <constraint firstItem="PtA-Fb-qq5" firstAttribute="leading" secondItem="N83-sq-Fw5" secondAttribute="leading" id="GaK-uE-OqE"/>
+                            <constraint firstItem="N83-sq-Fw5" firstAttribute="bottom" secondItem="PtA-Fb-qq5" secondAttribute="bottom" id="VcO-BV-YRx"/>
+                            <constraint firstItem="PtA-Fb-qq5" firstAttribute="top" secondItem="N83-sq-Fw5" secondAttribute="top" id="ldd-Bx-s8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N83-sq-Fw5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorites" id="Rlo-gL-WY3"/>
+                    <connections>
+                        <outlet property="favoritesQuotesTableview" destination="PtA-Fb-qq5" id="Sa0-hm-otV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gka-nS-5gZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713.0434782608697" y="131.91964285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l2P-Gy-jZP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oe0-so-0bT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iZ5-Sg-sMu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6K9-aR-YhV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Y1-ya-OnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="starOff" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.2.1)
+  - DZNEmptyDataSet (1.8.1)
+  - ReachabilitySwift (5.0.0)
+  - Realm (5.0.3):
+    - Realm/Headers (= 5.0.3)
+  - Realm/Headers (5.0.3)
+  - RealmSwift (5.0.3):
+    - Realm (= 5.0.3)
+  - RuntimeNew (2.1.5)
+  - Unrealm (1.3.5):
+    - RealmSwift (= 5.0.3)
+    - RuntimeNew (= 2.1.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - ReachabilitySwift
+  - RealmSwift
+  - Unrealm
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DZNEmptyDataSet
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - RuntimeNew
+    - Unrealm
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
+  RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
+  RuntimeNew: ef34cf1783be4c1cbe798970bc590924dab5df87
+  Unrealm: ba1c168935344084ba28dd6bff5ded86f4837d7f
+
+PODFILE CHECKSUM: de61336f1e64292b67ae1e15c841557d888f0476
+
+COCOAPODS: 1.9.2
